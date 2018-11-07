@@ -1,0 +1,405 @@
+/*Following SMACSS to organize CSS*/
+
+:root {
+	--topAndFooterBackground: #d6eef6ff;
+	--pageBackground: #e8f9ffff;
+	--mainFontColor: #ff2100ff;
+	--linkHover: #84ccdcff;
+	--line: #84ccdcff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*Base rules*/
+
+html {
+	text-align: center;
+}
+
+body {
+	display: inline-block;
+	width: 60%;
+}
+
+h1 {
+	font-size: 50px;
+	margin: auto;
+}
+
+nav {
+	text-align: right;
+}
+
+a {
+	color: var(--mainFontColor);
+	font-family: 'K2D', sans-serif;
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: #84ccdcff;
+}
+
+main {
+	background-color: var(--pageBackground)
+}
+
+blockquote {
+	text-align: right;
+	float: right;
+	margin: auto;
+}
+
+footer {
+	background-color: var(--topAndFooterBackground);
+	margin: auto;
+}
+
+/*Layout rules*/
+
+#pageHeader {
+	background-color: var(--topAndFooterBackground);
+	text-align: center;
+	padding-top: 1px;
+}
+
+#wrapTitle {
+	border-top: 1px solid var(--line);
+	border-bottom: 1px solid var(--line);
+	display: inline-block;
+	width: 100%;
+}
+
+.menu {
+	display: inline;
+	margin-right: 10px;
+	text-decoration: none;
+}
+
+#indice {
+	text-align: left;
+}
+
+#title {
+	color: var(--mainFontColor);
+	font-size: 3em;
+	outline: 1px solid var(--line);
+	width: 55%;
+	margin: auto;
+	font-family: 'K2D', sans-serif;
+}
+
+#article {
+	padding: 0px 20px 20px 20px;
+}
+
+#articleHeader {
+	text-align: left;
+}
+
+#indice {
+	width: 100px;
+	position: relative;
+	top: 2px;
+	left: 10px;
+	background-color: var(--topAndFooterBackground);
+	padding: 5px 0px 5px 5px;
+}
+
+#indiceTitle {
+	color: var(--mainFontColor);
+	margin: 5px;
+}
+
+#indiceList {
+	list-style-type: none;
+	padding-left: 0px;
+	text-align: center;
+	margin: 0px;
+}
+
+/*Modules rules*/
+
+
+.text p{
+	text-indent: 10%;
+	text-align: left;
+}
+
+.parts {
+	text-align: left;
+}
+
+.quote {
+	text-align: right;
+	display: inline-block;
+	width: 300px;
+}
+
+.quoteBody{
+	color: var(--mainFontColor);
+}
+
+.quoteAuthor {
+	color: #84ccdcff;
+}
+
+#footerInfo {
+	margin: auto;
+	text-align: center;
+	color: var(--mainFontColor);
+}
+
+@media (min-width: 320px) {
+	
+	body {
+		width: 100%;
+		margin: 0;
+	}
+
+	h1 {
+		font-size: 2.7em;
+	}
+
+	p {
+		font-size: 1.8em;
+	}
+
+	blockquote {
+		float: none;
+		text-align: center;
+	}
+
+	#title {
+		font-size: 2.5em;
+		width: 70%;
+	}
+
+	#articleHeader {
+		text-align: center;
+	}
+
+	#indiceTitle{
+		font-size: 2em;
+	}
+
+	#indiceList {
+		font-size: 1.7em;
+		padding-left: 20%;
+	}
+
+	.parts {
+		font-size: 2em;
+	}
+
+	.quote {
+		width: 90%;
+	}
+}
+
+@media (min-width: 375px) {
+	
+	html {
+		width: 100%;
+	}
+
+	body {
+		width: 100%;
+		margin: 0;
+	}
+
+	h1 {
+		text-align: center;
+		margin: 0 0 5% 0;
+	}
+
+	p {
+		font-size: 2em;
+	}
+
+	blockquote {
+		float: none;
+		text-align: center;
+	}
+
+	#title {
+		width: 70%;
+	}
+
+	.menu {
+		font-size: 1.8em;
+	}
+
+	#indice {
+		width: 50%;
+	}
+
+	#indiceTitle {
+		font-size: 2em;
+	}
+
+	#indiceList {
+		font-size: 2em;
+	}
+
+	.parts {
+		font-size: 2em;
+	}
+
+}
+
+@media (min-width: 420px) {
+	
+	#title {
+		font-size: 3.5em;
+		width: 75%;
+	}
+
+	#indice {
+		width: 40%;
+	}
+
+	#indiceList {
+		padding-left: 0;
+	}
+}
+
+@media (min-width: 760px) {
+	
+	body {
+		width: 80%;
+	}
+
+	h1 {
+		font-size: 2.5em;
+	}
+
+	p {
+		font-size: 1.3em;
+	}
+
+	.menu {
+		font-size: 1.2em;
+	}
+
+	#title {
+		font-size: 3em;
+    	width: 45%;
+	}
+
+	#article {
+		padding-top: 2%;
+	}
+
+	#indice {
+		width: 25%;
+	}
+
+	#indiceTitle {
+		font-size: 1.7em;
+	}
+
+	#indiceList {
+		font-size: 1.4em;
+		text-align: left;
+		padding-left: 15%;
+	}
+
+	.parts {
+		font-size: 1.5em;
+	}
+}
+
+@media (min-width: 1024px) {
+	
+	body {
+		width: 70%;
+	}
+
+	h1 {
+		font-size: 3em;
+	}
+
+	.menu {
+		font-size: 1.3em;
+	}
+
+	#title {
+		font-size: 3.5em;
+		width: 35%;
+	}
+
+	#articleHeader {
+		padding-top: 2%;
+	}
+
+	#indice {
+		width: 15%;
+	}
+
+	#indiceTitle {
+		font-size: 1.8em;
+	}
+
+	#indiceList {
+		font-size: 1.5em;
+	}
+
+	.parts {
+		font-size: 1.5em;
+	}
+
+	.text p {
+		font-size: 1.3em;
+		text-indent: 3%;
+	}
+
+	#footerInfo {
+		font-size: 1.5em;
+	}
+
+}
+
+@media (min-width: 1400px) {
+	
+	h1 {
+		font-size: 5em;
+	}
+
+	.menu {
+		font-size: 2.5em;
+	}
+
+	#title {
+		font-size: 5.5em;
+	}
+
+	#indice {
+		width: 17%;
+	}
+
+	#indiceTitle {
+		font-size: 3.5em;
+	}
+
+	#indiceList {
+		font-size: 2.5em;
+		padding-left: 20%;
+		text-align: left;
+	}
+
+	.parts {
+		font-size: 3em;
+	}
+
+	.text p {
+		font-size: 2.5em;
+	}
+
+	#footerInfo {
+		font-size: 2.5em;
+	}
+
+}
